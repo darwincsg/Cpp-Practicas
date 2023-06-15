@@ -22,7 +22,7 @@ ListNode* construtorLista(int x, ListNode* head){
 
     return head;
 }
-
+//añadir a la lista
 ListNode* inserir(int x, ListNode* head){
     ListNode *novo = new ListNode;
     novo->val = x;
@@ -57,7 +57,9 @@ void mostrarlista(ListNode *head){
     
     return;
 }
-
+/*La solucion consta de dos partes, primero recorremos la lista para saber cual es su largura para después verificar si es un palindromo, por terminos
+de eficiencia se evita volver a recorrer la lista entera y en vez de ello se recorre solo la mitad (n/2).
+*/
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
